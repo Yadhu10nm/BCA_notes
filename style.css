@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('surana.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This makes the background stationary */
+    position: relative;
+}
+
+/* Dark overlay for better text readability */
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(90, 90, 90, 0.6); /* Black with 60% opacity */
+    z-index: -1;
+}
+
+/* Ensure content is above the overlay */
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Styling for the year selection cards on the homepage */
+.year-card .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.year-card .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Custom styling for list group items on subject pages */
+.list-group-item {
+    padding: 1.25rem;
+}
+
+/* Ensure button text is readable */
+.btn-primary {
+    border-color: #0d6efd;
+}
+
+.btn-outline-light {
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: black;
+}
