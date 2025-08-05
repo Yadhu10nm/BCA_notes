@@ -58,4 +58,8 @@ body {
 .btn-outline-light:hover {
     background-color: white;
     color: black;
+
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.2);
 }
